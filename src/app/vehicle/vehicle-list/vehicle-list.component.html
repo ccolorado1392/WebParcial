@@ -1,0 +1,38 @@
+<div class="container">
+  <h4 class="title"><strong>TuSegundazo.com</strong></h4>
+
+  <hr />
+
+  <img class="col-12" src="assets/images/imagecar.png" alt="">
+
+  <hr />
+  <div class="d-flex col-5">
+    <table class="table">
+      <thead class="thead-dark bg-dark text-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Linea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of vehicles">
+          <td scope="row">{{item.id}}</td>
+          <td scope="row">{{item.marca}}</td>
+          <td scope="row">{{item.linea}}</td>
+          <td scope="row">{{item.modelo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div *ngFor="let total of totales ; let i = index">
+    Total: {{total.marca}}: {{total.total}}
+  </div>
+
+  <div class="d-flex text-align-center justify-content-center mt-4">
+    <p>Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo</p>
+  </div>
+</div>
